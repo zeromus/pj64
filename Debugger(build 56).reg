@@ -1,0 +1,5 @@
+REGEDIT4
+
+[HKEY_CURRENT_USER\Software\N64 Emulation\Project64 (Build 55)]
+"Debugger"=dword:9348ae97
+
