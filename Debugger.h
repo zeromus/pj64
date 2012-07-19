@@ -27,14 +27,14 @@
 #include "Main.h"
 
 #include "BreakPoints.h"
-#include "R4300i Registers.h"
-#include "R4300i Memory.h"
-#include "TLB Display.h"
+#include "R4300iRegisters.h"
+#include "R4300iMemory.h"
+#include "TLBDisplay.h"
 #include "Logging.h"
 //#include "Reverse Code.h"
 
 #endif
 
-#include "R4300i Commands.h"
+#include "R4300iCommands.h"
 #include "mapping.h"
-#include "CPU Log.h"
+#include "CPULog.h"

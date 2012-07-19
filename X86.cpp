@@ -463,7 +463,7 @@ void CompX86RegToX86Reg(int Destination, int Source) {
 	PUTDST16(RecompPos,x86Command);
 }
 
-void DecX86reg(x86Reg) {
+void DecX86reg(int x86Reg) {
 	CPU_Message("      dec %s",x86_Name(x86Reg));
 	switch (x86Reg) {
 	case x86_EAX: PUTDST16(RecompPos,0xC8FF); break;

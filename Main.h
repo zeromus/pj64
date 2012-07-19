@@ -36,7 +36,7 @@ extern "C" {
 #include "Types.h"
 #include "win32Timer.h"
 #include "Profiling.h"
-#include "Settings API.h"
+#include "SettingsAPI.h"
 #include "rombrowser.h"
 #include "Language.h"
 

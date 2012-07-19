@@ -34,7 +34,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -75,16 +75,17 @@
       <Optimization>Disabled</Optimization>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <WarningLevel>Level3</WarningLevel>
-      <MinimalRebuild>true</MinimalRebuild>
+      <MinimalRebuild>false</MinimalRebuild>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
-      <AdditionalIncludeDirectories>C:\Development\PJ64 Source C++ 6.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
       <BrowseInformation>true</BrowseInformation>
       <PrecompiledHeaderOutputFile>.\Debug\Project64.pch</PrecompiledHeaderOutputFile>
       <ObjectFileName>.\Debug\</ObjectFileName>
       <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Midl>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -195,62 +196,64 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BreakPoints.c" />
-    <ClCompile Include="CPU Log.c" />
-    <ClCompile Include="Logging.c" />
-    <ClCompile Include="mapping.c" />
-    <ClCompile Include="r4300i Commands.c" />
-    <ClCompile Include="r4300i Memory.c" />
-    <ClCompile Include="r4300i Registers.c" />
-    <ClCompile Include="TLB Display.c" />
-    <ClCompile Include="Cheat.c" />
-    <ClCompile Include="Main.c" />
+    <ClCompile Include="BreakPoints.cpp" />
+    <ClCompile Include="CPULog.cpp" />
+    <ClCompile Include="InterpreterCPU.cpp" />
+    <ClCompile Include="InterpreterOps.cpp" />
+    <ClCompile Include="Logging.cpp" />
+    <ClCompile Include="mapping.cpp" />
+    <ClCompile Include="r4300iCommands.cpp" />
+    <ClCompile Include="r4300iMemory.cpp" />
+    <ClCompile Include="r4300iRegisters.cpp" />
+    <ClCompile Include="RecompilerCPU.cpp" />
+    <ClCompile Include="RecompilerFpuOps.cpp" />
+    <ClCompile Include="RecompilerOps.cpp" />
+    <ClCompile Include="Cheat.cpp" />
+    <ClCompile Include="Main.cpp" />
     <ClCompile Include="main2.cpp" />
     <ClCompile Include="MemTest.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="Profiling.c" />
-    <ClCompile Include="RomBrowser.c" />
-    <ClCompile Include="Settings Api.c" />
-    <ClCompile Include="Settings.c" />
-    <ClCompile Include="Win32Timer.c" />
+    <ClCompile Include="Profiling.cpp" />
+    <ClCompile Include="RomBrowser.cpp" />
+    <ClCompile Include="Settings Api.cpp" />
+    <ClCompile Include="Settings.cpp" />
+    <ClCompile Include="SyncCPU.cpp" />
+    <ClCompile Include="TLBDisplay.cpp" />
+    <ClCompile Include="Win32Timer.cpp" />
     <ClCompile Include="unzip.c">
       <CallingConvention Condition="'$(Configuration)|$(Platform)'=='Release External|Win32'">Cdecl</CallingConvention>
     </ClCompile>
-    <ClCompile Include="zip.c" />
-    <ClCompile Include="Eeprom.c" />
-    <ClCompile Include="FlashRam.c" />
-    <ClCompile Include="Mempak.c" />
-    <ClCompile Include="Sram.c" />
-    <ClCompile Include="CPU.c" />
-    <ClCompile Include="DMA.c" />
-    <ClCompile Include="Exception.c" />
-    <ClCompile Include="Interpreter CPU.c" />
-    <ClCompile Include="Interpreter Ops.c" />
-    <ClCompile Include="Memory.c" />
-    <ClCompile Include="pif.c" />
-    <ClCompile Include="Recompiler CPU.c" />
-    <ClCompile Include="Recompiler Fpu Ops.c" />
-    <ClCompile Include="Recompiler Ops.c" />
-    <ClCompile Include="Registers.c" />
-    <ClCompile Include="rom.c" />
-    <ClCompile Include="Sync CPU.c" />
-    <ClCompile Include="TLB.c" />
-    <ClCompile Include="Plugin.c" />
-    <ClCompile Include="x86 fpu.c" />
-    <ClCompile Include="X86.c" />
+    <ClCompile Include="Eeprom.cpp" />
+    <ClCompile Include="FlashRam.cpp" />
+    <ClCompile Include="Mempak.cpp" />
+    <ClCompile Include="Sram.cpp" />
+    <ClCompile Include="CPU.cpp" />
+    <ClCompile Include="DMA.cpp" />
+    <ClCompile Include="Exception.cpp" />
+    <ClCompile Include="Memory.cpp" />
+    <ClCompile Include="pif.cpp" />
+    <ClCompile Include="Registers.cpp" />
+    <ClCompile Include="rom.cpp" />
+    <ClCompile Include="TLB.cpp" />
+    <ClCompile Include="Plugin.cpp" />
+    <ClCompile Include="X86.cpp" />
     <ClCompile Include="Language.cpp" />
+    <ClCompile Include="x86fpu.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BreakPoints.h" />
     <ClInclude Include="CPU Log.h" />
     <ClInclude Include="Debugger.h" />
+    <ClInclude Include="InterpreterCPU.h" />
+    <ClInclude Include="InterpreterOps.h" />
     <ClInclude Include="Logging.h" />
     <ClInclude Include="Mapping.h" />
-    <ClInclude Include="r4300i Commands.h" />
-    <ClInclude Include="r4300i Memory.h" />
-    <ClInclude Include="r4300i Registers.h" />
-    <ClInclude Include="tlb Display.h" />
+    <ClInclude Include="r4300iCommands.h" />
+    <ClInclude Include="r4300iMemory.h" />
+    <ClInclude Include="r4300iRegisters.h" />
+    <ClInclude Include="RecompilerCPU.h" />
+    <ClInclude Include="RecompilerOps.h" />
     <ClInclude Include="Cheats.h" />
     <ClInclude Include="HTMLHELP.H" />
     <ClInclude Include="main.h" />
@@ -260,6 +263,8 @@
     <ClInclude Include="Settings Api.h" />
     <ClInclude Include="Settings.h" />
     <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="SyncCPU.h" />
+    <ClInclude Include="tlbDisplay.h" />
     <ClInclude Include="Types.h" />
     <ClInclude Include="Win32Timer.h" />
     <ClInclude Include="Eeprom.h" />
@@ -269,16 +274,11 @@
     <ClInclude Include="CPU.h" />
     <ClInclude Include="DMA.h" />
     <ClInclude Include="Exception.h" />
-    <ClInclude Include="Interpreter CPU.h" />
-    <ClInclude Include="Interpreter Ops.h" />
     <ClInclude Include="Memory.h" />
     <ClInclude Include="OpCode.h" />
     <ClInclude Include="pif.h" />
-    <ClInclude Include="Recompiler CPU.h" />
-    <ClInclude Include="Recompiler Ops.h" />
     <ClInclude Include="Registers.h" />
     <ClInclude Include="Rom.h" />
-    <ClInclude Include="Sync CPU.h" />
     <ClInclude Include="tlb.h" />
     <ClInclude Include="unzip.h" />
     <ClInclude Include="zconf.h" />

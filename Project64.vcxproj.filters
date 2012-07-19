@@ -1,331 +1,116 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{fd7988c2-6d46-460c-a311-dff75bbc16de}</UniqueIdentifier>
-      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
-    </Filter>
-    <Filter Include="Source Files\Debugger Source">
-      <UniqueIdentifier>{78049714-fa68-4d24-8cc8-bc7f9ce415c2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\General Source">
-      <UniqueIdentifier>{23f17cb6-fd4d-4a11-9dc6-521acb0f83f7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Zlib Source">
-      <UniqueIdentifier>{e2e635fd-1c9e-4a39-a951-137439862422}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\CPU Source">
-      <UniqueIdentifier>{30b2c50f-8125-4419-b69f-da2af5e58c71}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\CPU Source\Save Chips">
-      <UniqueIdentifier>{dbb5db16-a5cb-48e6-98ef-33bece820faa}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Plugin Source">
-      <UniqueIdentifier>{303d569f-3bf9-4ee7-9218-ecadfc2e8419}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\X86 Opcodes Source">
-      <UniqueIdentifier>{3622b140-6b45-4a3a-a772-530e81a89d9d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Lang Source">
-      <UniqueIdentifier>{5cc323aa-9b98-4eeb-8bc3-0db4fcb513f8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{0c118960-3d23-4733-914b-c71d684004b4}</UniqueIdentifier>
-      <Extensions>h;hpp;hxx;hm;inl</Extensions>
-    </Filter>
-    <Filter Include="Header Files\Debugger Headers">
-      <UniqueIdentifier>{e1499904-2cbd-4593-9dbc-84bb6564687c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\General Header">
-      <UniqueIdentifier>{d302c4d6-edf0-45b9-815a-ebe2673cca43}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\CPU Header">
-      <UniqueIdentifier>{3343b853-d585-4d97-af61-d31bc107ebcf}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\CPU Header\Save Chips headers">
-      <UniqueIdentifier>{bcc6fdf9-aa00-48d9-9397-19974abaeab6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Zlib Header">
-      <UniqueIdentifier>{188bf492-5a10-460c-a8f6-2be14d00fb94}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Plugin Header">
-      <UniqueIdentifier>{d892649e-8c80-43d5-82af-3edcce528d00}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\X86 Opcodes Headers">
-      <UniqueIdentifier>{2bf70d37-16b2-4f9f-9b9b-cd372105f27f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Lang Header">
-      <UniqueIdentifier>{2018a5f5-67af-4d47-a97d-2579fecd6d4e}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{c1387139-4675-44da-83ed-3360bbbc0568}</UniqueIdentifier>
       <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
     </Filter>
+    <Filter Include="Zlib Source">
+      <UniqueIdentifier>{e2e635fd-1c9e-4a39-a951-137439862422}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Zlib Header">
+      <UniqueIdentifier>{188bf492-5a10-460c-a8f6-2be14d00fb94}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BreakPoints.c">
-      <Filter>Source Files\Debugger Source</Filter>
-    </ClCompile>
-    <ClCompile Include="CPU Log.c">
-      <Filter>Source Files\Debugger Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Logging.c">
-      <Filter>Source Files\Debugger Source</Filter>
-    </ClCompile>
-    <ClCompile Include="mapping.c">
-      <Filter>Source Files\Debugger Source</Filter>
-    </ClCompile>
-    <ClCompile Include="r4300i Commands.c">
-      <Filter>Source Files\Debugger Source</Filter>
-    </ClCompile>
-    <ClCompile Include="r4300i Memory.c">
-      <Filter>Source Files\Debugger Source</Filter>
-    </ClCompile>
-    <ClCompile Include="r4300i Registers.c">
-      <Filter>Source Files\Debugger Source</Filter>
-    </ClCompile>
-    <ClCompile Include="TLB Display.c">
-      <Filter>Source Files\Debugger Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Cheat.c">
-      <Filter>Source Files\General Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Main.c">
-      <Filter>Source Files\General Source</Filter>
-    </ClCompile>
-    <ClCompile Include="main2.cpp">
-      <Filter>Source Files\General Source</Filter>
-    </ClCompile>
-    <ClCompile Include="MemTest.cpp">
-      <Filter>Source Files\General Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Profiling.c">
-      <Filter>Source Files\General Source</Filter>
-    </ClCompile>
-    <ClCompile Include="RomBrowser.c">
-      <Filter>Source Files\General Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Settings Api.c">
-      <Filter>Source Files\General Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Settings.c">
-      <Filter>Source Files\General Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Win32Timer.c">
-      <Filter>Source Files\General Source</Filter>
-    </ClCompile>
     <ClCompile Include="unzip.c">
-      <Filter>Source Files\Zlib Source</Filter>
+      <Filter>Zlib Source</Filter>
     </ClCompile>
-    <ClCompile Include="zip.c">
-      <Filter>Source Files\Zlib Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Eeprom.c">
-      <Filter>Source Files\CPU Source\Save Chips</Filter>
-    </ClCompile>
-    <ClCompile Include="FlashRam.c">
-      <Filter>Source Files\CPU Source\Save Chips</Filter>
-    </ClCompile>
-    <ClCompile Include="Mempak.c">
-      <Filter>Source Files\CPU Source\Save Chips</Filter>
-    </ClCompile>
-    <ClCompile Include="Sram.c">
-      <Filter>Source Files\CPU Source\Save Chips</Filter>
-    </ClCompile>
-    <ClCompile Include="CPU.c">
-      <Filter>Source Files\CPU Source</Filter>
-    </ClCompile>
-    <ClCompile Include="DMA.c">
-      <Filter>Source Files\CPU Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Exception.c">
-      <Filter>Source Files\CPU Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Interpreter CPU.c">
-      <Filter>Source Files\CPU Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Interpreter Ops.c">
-      <Filter>Source Files\CPU Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Memory.c">
-      <Filter>Source Files\CPU Source</Filter>
-    </ClCompile>
-    <ClCompile Include="pif.c">
-      <Filter>Source Files\CPU Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Recompiler CPU.c">
-      <Filter>Source Files\CPU Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Recompiler Fpu Ops.c">
-      <Filter>Source Files\CPU Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Recompiler Ops.c">
-      <Filter>Source Files\CPU Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Registers.c">
-      <Filter>Source Files\CPU Source</Filter>
-    </ClCompile>
-    <ClCompile Include="rom.c">
-      <Filter>Source Files\CPU Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Sync CPU.c">
-      <Filter>Source Files\CPU Source</Filter>
-    </ClCompile>
-    <ClCompile Include="TLB.c">
-      <Filter>Source Files\CPU Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Plugin.c">
-      <Filter>Source Files\Plugin Source</Filter>
-    </ClCompile>
-    <ClCompile Include="x86 fpu.c">
-      <Filter>Source Files\X86 Opcodes Source</Filter>
-    </ClCompile>
-    <ClCompile Include="X86.c">
-      <Filter>Source Files\X86 Opcodes Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Language.cpp">
-      <Filter>Source Files\Lang Source</Filter>
-    </ClCompile>
+    <ClCompile Include="x86fpu.cpp" />
+    <ClCompile Include="BreakPoints.cpp" />
+    <ClCompile Include="Cheat.cpp" />
+    <ClCompile Include="CPU.cpp" />
+    <ClCompile Include="CPULog.cpp" />
+    <ClCompile Include="DMA.cpp" />
+    <ClCompile Include="Eeprom.cpp" />
+    <ClCompile Include="Exception.cpp" />
+    <ClCompile Include="FlashRam.cpp" />
+    <ClCompile Include="InterpreterCPU.cpp" />
+    <ClCompile Include="InterpreterOps.cpp" />
+    <ClCompile Include="Language.cpp" />
+    <ClCompile Include="Logging.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="main2.cpp" />
+    <ClCompile Include="mapping.cpp" />
+    <ClCompile Include="Memory.cpp" />
+    <ClCompile Include="Mempak.cpp" />
+    <ClCompile Include="MemTest.cpp" />
+    <ClCompile Include="pif.cpp" />
+    <ClCompile Include="Plugin.cpp" />
+    <ClCompile Include="Profiling.cpp" />
+    <ClCompile Include="r4300iCommands.cpp" />
+    <ClCompile Include="r4300iMemory.cpp" />
+    <ClCompile Include="r4300iRegisters.cpp" />
+    <ClCompile Include="RecompilerCPU.cpp" />
+    <ClCompile Include="RecompilerFpuOps.cpp" />
+    <ClCompile Include="RecompilerOps.cpp" />
+    <ClCompile Include="Registers.cpp" />
+    <ClCompile Include="rom.cpp" />
+    <ClCompile Include="RomBrowser.cpp" />
+    <ClCompile Include="Settings Api.cpp" />
+    <ClCompile Include="Settings.cpp" />
+    <ClCompile Include="Sram.cpp" />
+    <ClCompile Include="TLB.cpp" />
+    <ClCompile Include="Win32Timer.cpp" />
+    <ClCompile Include="X86.cpp" />
+    <ClCompile Include="SyncCPU.cpp" />
+    <ClCompile Include="TLBDisplay.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BreakPoints.h">
-      <Filter>Header Files\Debugger Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="CPU Log.h">
-      <Filter>Header Files\Debugger Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="Debugger.h">
-      <Filter>Header Files\Debugger Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="Logging.h">
-      <Filter>Header Files\Debugger Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="Mapping.h">
-      <Filter>Header Files\Debugger Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="r4300i Commands.h">
-      <Filter>Header Files\Debugger Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="r4300i Memory.h">
-      <Filter>Header Files\Debugger Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="r4300i Registers.h">
-      <Filter>Header Files\Debugger Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="tlb Display.h">
-      <Filter>Header Files\Debugger Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="Cheats.h">
-      <Filter>Header Files\General Header</Filter>
-    </ClInclude>
-    <ClInclude Include="HTMLHELP.H">
-      <Filter>Header Files\General Header</Filter>
-    </ClInclude>
-    <ClInclude Include="main.h">
-      <Filter>Header Files\General Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Profiling.h">
-      <Filter>Header Files\General Header</Filter>
-    </ClInclude>
-    <ClInclude Include="resource.h">
-      <Filter>Header Files\General Header</Filter>
-    </ClInclude>
-    <ClInclude Include="RomBrowser.h">
-      <Filter>Header Files\General Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Settings Api.h">
-      <Filter>Header Files\General Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Settings.h">
-      <Filter>Header Files\General Header</Filter>
-    </ClInclude>
-    <ClInclude Include="StdAfx.h">
-      <Filter>Header Files\General Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Types.h">
-      <Filter>Header Files\General Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Win32Timer.h">
-      <Filter>Header Files\General Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Eeprom.h">
-      <Filter>Header Files\CPU Header\Save Chips headers</Filter>
-    </ClInclude>
-    <ClInclude Include="Flashram.h">
-      <Filter>Header Files\CPU Header\Save Chips headers</Filter>
-    </ClInclude>
-    <ClInclude Include="mempak.h">
-      <Filter>Header Files\CPU Header\Save Chips headers</Filter>
-    </ClInclude>
-    <ClInclude Include="Sram.h">
-      <Filter>Header Files\CPU Header\Save Chips headers</Filter>
-    </ClInclude>
-    <ClInclude Include="CPU.h">
-      <Filter>Header Files\CPU Header</Filter>
-    </ClInclude>
-    <ClInclude Include="DMA.h">
-      <Filter>Header Files\CPU Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Exception.h">
-      <Filter>Header Files\CPU Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Interpreter CPU.h">
-      <Filter>Header Files\CPU Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Interpreter Ops.h">
-      <Filter>Header Files\CPU Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Memory.h">
-      <Filter>Header Files\CPU Header</Filter>
-    </ClInclude>
-    <ClInclude Include="OpCode.h">
-      <Filter>Header Files\CPU Header</Filter>
-    </ClInclude>
-    <ClInclude Include="pif.h">
-      <Filter>Header Files\CPU Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Recompiler CPU.h">
-      <Filter>Header Files\CPU Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Recompiler Ops.h">
-      <Filter>Header Files\CPU Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Registers.h">
-      <Filter>Header Files\CPU Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Rom.h">
-      <Filter>Header Files\CPU Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Sync CPU.h">
-      <Filter>Header Files\CPU Header</Filter>
-    </ClInclude>
-    <ClInclude Include="tlb.h">
-      <Filter>Header Files\CPU Header</Filter>
-    </ClInclude>
     <ClInclude Include="unzip.h">
-      <Filter>Header Files\Zlib Header</Filter>
+      <Filter>Zlib Header</Filter>
     </ClInclude>
     <ClInclude Include="zconf.h">
-      <Filter>Header Files\Zlib Header</Filter>
+      <Filter>Zlib Header</Filter>
     </ClInclude>
     <ClInclude Include="zip.h">
-      <Filter>Header Files\Zlib Header</Filter>
+      <Filter>Zlib Header</Filter>
     </ClInclude>
     <ClInclude Include="zlib.h">
-      <Filter>Header Files\Zlib Header</Filter>
+      <Filter>Zlib Header</Filter>
     </ClInclude>
-    <ClInclude Include="Plugin.h">
-      <Filter>Header Files\Plugin Header</Filter>
-    </ClInclude>
-    <ClInclude Include="X86.h">
-      <Filter>Header Files\X86 Opcodes Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="Language.h">
-      <Filter>Header Files\Lang Header</Filter>
-    </ClInclude>
-    <ClInclude Include="MemTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClInclude Include="BreakPoints.h" />
+    <ClInclude Include="X86.h" />
+    <ClInclude Include="Cheats.h" />
+    <ClInclude Include="CPU Log.h" />
+    <ClInclude Include="CPU.h" />
+    <ClInclude Include="Debugger.h" />
+    <ClInclude Include="DMA.h" />
+    <ClInclude Include="Eeprom.h" />
+    <ClInclude Include="Exception.h" />
+    <ClInclude Include="Flashram.h" />
+    <ClInclude Include="HTMLHELP.H" />
+    <ClInclude Include="InterpreterCPU.h" />
+    <ClInclude Include="InterpreterOps.h" />
+    <ClInclude Include="Language.h" />
+    <ClInclude Include="Logging.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="Mapping.h" />
+    <ClInclude Include="Memory.h" />
+    <ClInclude Include="mempak.h" />
+    <ClInclude Include="MemTest.h" />
+    <ClInclude Include="OpCode.h" />
+    <ClInclude Include="pif.h" />
+    <ClInclude Include="Plugin.h" />
+    <ClInclude Include="Profiling.h" />
+    <ClInclude Include="r4300iCommands.h" />
+    <ClInclude Include="r4300iMemory.h" />
+    <ClInclude Include="r4300iRegisters.h" />
+    <ClInclude Include="RecompilerCPU.h" />
+    <ClInclude Include="RecompilerOps.h" />
+    <ClInclude Include="Registers.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Rom.h" />
+    <ClInclude Include="RomBrowser.h" />
+    <ClInclude Include="Settings Api.h" />
+    <ClInclude Include="Settings.h" />
+    <ClInclude Include="Sram.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="tlb.h" />
+    <ClInclude Include="Types.h" />
+    <ClInclude Include="Win32Timer.h" />
+    <ClInclude Include="SyncCPU.h" />
+    <ClInclude Include="tlbDisplay.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="PJ64.rc">

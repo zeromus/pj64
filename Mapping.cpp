@@ -29,7 +29,7 @@
 
 #if (!defined(EXTERNAL_RELEASE))
 #include "main.h"
-#include "R4300i Commands.h"
+#include "R4300iCommands.h"
 #include "BreakPoints.h"
 #include "mapping.h"
 #include "unzip.h"
